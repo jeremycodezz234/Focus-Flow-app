@@ -1,19 +1,39 @@
-//
-//  ContentView.swift
-//  Focus Flow app
-//
-//  Created by Jeremy J. Woetzel on 4/22/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Focus flow")
+        VStack(spacing: 40) {
+            
+            Spacer()
+            
+            // App Title
+            Text("FocusFlow")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            
+            // Subtitle
+            Text("Stay focused. Study smarter.")
+                .font(.subheadline)
+                .foregroundColor(.white)
+            
+            Spacer()
+            
+            // Start Button
+            Button(action: {
+            }) {
+                Text("Start Session")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .frame(width: 220, height: 60)
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    .shadow(radius: 5)
+            }
+            
+            Spacer()
+            
         }
         .padding()
     }
